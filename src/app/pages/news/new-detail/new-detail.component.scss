@@ -1,0 +1,437 @@
+@import '/src/styleVariables.scss';
+
+.new {
+  width: calc(100% - 2rem);
+  background-image: url('/assets/images/background_cascade_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 8rem 1rem;
+
+  .limiter {
+    color: $white;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .back {
+      cursor: pointer;
+      margin-bottom: 2rem;
+
+      .icon {
+        vertical-align: middle;
+      }
+
+      .text {
+        vertical-align: middle;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+
+    .new-detail {
+      position: relative;
+      background: #ffffff22;
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 5rem;
+
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+
+        &.prev {
+          left: 0;
+        }
+
+        &.next {
+          right: 0;
+        }
+
+        .icon {
+          vertical-align: middle;
+        }
+
+        .text {
+          vertical-align: middle;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      .title {
+        font-family: $grazler;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+        margin: 2rem auto;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.5rem;
+      }
+
+      .text {
+        font-weight: 300;
+        line-height: 1.2em;
+        font-size: 1rem;
+
+        p {
+          text-align: justify;
+          line-height: 1.2em;
+          margin: 1.5rem 0;
+          font-weight: 400;
+        }
+
+        h2 {
+          margin: 3rem 0 1rem;
+        }
+
+        img {
+          width: 100%;
+          max-height: 300px;
+          object-fit: contain;
+          margin: 2rem 0;
+        }
+      }
+
+      .video {
+        margin: 2rem auto;
+        width: 100%;
+        max-width: 600px;
+
+        .video-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 */
+          height: 0;
+
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .date {
+        font-size: 0.8rem;
+        text-align: right;
+        margin: 2rem auto 1rem;
+      }
+
+      .image {
+        display: block;
+        width: 80%;
+        max-width: 800px;
+        margin: 1rem auto 2rem;
+        object-fit: contain;
+      }
+
+      .social {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.2rem;
+        padding-top: 2.2rem;
+        border-top: 2px solid #d9d9d9;
+
+        h3 {
+          margin: 0 2rem;
+          font-size: 1.5rem;
+          width: 100%;
+          text-align: center;
+        }
+
+        .bsocial {
+          cursor: pointer;
+          width: 2.7rem;
+          height: 2.7rem;
+          margin: 0.3rem;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &_bg:after {
+            content: "";
+            background: $red;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            clip-path: polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+            transition: 0.45s background cubic-bezier(.55,0,.1,1);
+          }
+
+          &:hover .bsocial_bg:after {
+            background: $red-light;
+          }
+
+          &_i {
+            width: 1.6rem;
+            scale: 0.8;
+            display: flex;
+            position: relative;
+
+            svg {
+              width: 100%;
+              height: 30px;
+              fill: none;
+
+              path {
+                fill: white;
+                stroke: white;
+                stroke-width: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .more-news {
+
+      h3 {
+        font-family: $grazler;
+        font-size: 1.5rem;
+        margin: 2rem 0 0;
+        text-align: center;
+      }
+
+      .view-more {
+        cursor: pointer;
+        font-family: $grazler;
+        font-size: 1rem;
+        text-align: right;
+        width: max-content;
+        margin: auto 0 auto auto;
+
+        &:hover {
+          color: $red-light;
+        }
+      }
+
+      .new-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: wrap;
+
+        .new {
+          cursor: pointer;
+          position: relative;
+          margin: 1rem auto;
+          padding: 1rem 1rem 1.5rem;
+          border-radius: 0 0 20px 20px;
+          width: 80%;
+          display: grid;
+          gap: unset;
+          transition: background 0.2s ease-in-out;
+          background: linear-gradient(75deg, #ffffff22 0%, #ffffff22 33%, #ffffff33 48%,#ffffff22 66%,#ffffff22 100%);
+          background-position: -200%;
+          background-size: 300%;
+          border-image: linear-gradient(to right, transparent, #ae5365 30%, #ae5365 70%, transparent) 100% 1;
+          border-width: 4px 0 0 0;
+          border-style: solid;
+
+          &:hover {
+            background-position: -250%;
+
+            .data .image {
+
+              .subtitle {
+                transform: translate(-50%,-50%) scale(1.2) rotate(-2deg);
+              }
+
+              img{
+                border-radius: 0 20px;
+              }
+            }
+          }
+
+          .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            grid-row: 1;
+            text-align: center;
+            align-self: center;
+          }
+
+          .data {
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: minmax(160px, 1fr) 2fr;
+
+            .image {
+              position: relative;
+              line-height: 0;
+              overflow: hidden;
+              grid-column: 1;
+              grid-row: 1;
+
+              .subtitle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) scale(1) rotate(0deg);
+                width: 80%;
+                background: #000000aa;
+                padding: 10px 10%;
+                font-size: 0.8rem;
+                font-weight: 300;
+                margin: 0 0 5px;
+                text-align: center;
+                transition: transform 0.2s ease-in-out;
+              }
+
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100px;
+                border-radius: 20px 0;
+                transition: border-radius 0.2s ease-in-out;
+              }
+            }
+
+            .text {
+              grid-column: 2;
+              grid-row: 1;
+              align-self: center;
+              justify-self: center;
+              font-weight: normal;
+              margin: 0.5rem 0;
+              font-size: 0.9rem;
+            }
+          }
+
+          .date {
+            position: absolute;
+            bottom: 5px;
+            right: 15px;
+            font-size: 0.8rem;
+            text-align: right;
+            margin: 10px 0 0;
+          }
+
+          .read-time {
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            font-size: 0.8rem;
+            text-align: right;
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*
+ * Responsive breakpoints
+ */
+
+// Very small devices
+@media (min-width: 320px) {
+}
+
+// Small devices
+@media (min-width: 576px) {
+  .new .limiter .new-detail {
+
+    .arrow .text {
+      font-size: 1.2rem;
+    }
+
+    .social{
+      justify-content: flex-end;
+
+      .bsocial {
+        width: 4rem;
+        height: 4rem;
+        margin: 0.4rem;
+
+        &_i {
+          scale: 1;
+        }
+      }
+
+      h3 {
+        width: unset;
+      }
+    }
+  }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .new {
+    background-image: url('/assets/images/background_cascade_desktop.png');
+
+    .limiter .new-detail {
+
+      .title {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .new .limiter {
+    gap: 0 5rem;
+    grid-template-columns: 1fr max-content;
+
+    .back {
+      grid-column: 1/3;
+    }
+
+    .more-news{
+      height: max-content;
+      position: sticky;
+      top: 0;
+      padding-bottom: 2rem;
+
+      .new-wrapper {
+        display: block;
+
+        .new {
+          width: 300px;
+          margin: 2rem auto;
+
+          .data {
+            grid-template-columns: unset;
+
+            .image {
+              grid-column: unset;
+            }
+
+            .text {
+              grid-column: unset;
+              grid-row: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+}

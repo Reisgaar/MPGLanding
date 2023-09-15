@@ -1,0 +1,212 @@
+{
+
+  "menu": {
+    "games": "Juegos",
+    "team": "Equipo",
+    "news": "Noticias",
+    "mediaKit": "Media Kit",
+    "mediaKitRoute": "assets/documents/Maniac_Panda_Dossier_ES.pdf",
+    "contact": "Contacto"
+  },
+
+  "footer": {
+    "stayConnected": "Nuestras Redes",
+    "followUs": "Síguenos",
+    "contact": "Contacto",
+    "legal": {
+      "title": "Legal",
+      "legalNotice": "Aviso Legal",
+      "privacyPolicy": "Política de Privacidad",
+      "cookiesPolicy": "Política de Cookies"
+    }
+  },
+
+  "home": {
+    "games": "Juegos",
+    "watchTrailer": "Ver Tráiler",
+    "socialMedia": "Redes Sociales",
+    "claim": "Discover new dimensions of gaming",
+    "watchButton": "Nuestros juegos",
+    "nextGame": "Siguiente",
+    "gameLinkTypes": {
+      "download": "Descargar",
+      "preAlpha": "Pre Alpha",
+      "beta": "Beta",
+      "techDemo": "Demo técnica",
+      "wishlist": "Lista de deseados"
+    }
+  },
+
+  "language": {
+    "lang": "es"
+  },
+
+  "team": {
+    "title": "Descubre el equipo internacional detrás de Maniac Panda Games",
+    "name": "text",
+    "external": "Externos",
+    "departments": {
+      "creativeLeadership": "Creative Leadership",
+      "production": "Production",
+      "design": "Design",
+      "conceptArt": "Concept Art",
+      "uiArt": "UI Art",
+      "art3D": "3D Art",
+      "animator3D": "3D Animator",
+      "environmentArt": "Environment Art",
+      "techArt": "Tech Art",
+      "vfxArt": "VFX Art",
+      "gameDevelopment": "Game Development",
+      "qa": "QA",
+      "serverBackendDevops": "Server / Backend / Devops",
+      "blockchainWebDevelopment": "Blockchain / Web Development",
+      "itSecurity": "IT / Security",
+      "marketingBusiness": "Marketing / Business",
+      "legalAdministrationHr": "Legal / Administration / Human Resources"
+    }
+  },
+
+  "contact": {
+    "text1": "¿Alguna pregunta?",
+    "text2": "¡Contacta con nosotros!",
+    "form": {
+      "interest": "Interesado en",
+      "name": "Nombre completo",
+      "email": "Email",
+      "country": "País",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "terms": "Acepto los términos y condiciones",
+      "submit": "Enviar"
+    },
+    "map": {
+      "title": "Nuestros empleados en el mundo",
+      "text1": "Nuestra sede principal se encuentra en la región de Navarra, España (Calle del Pol. Ind. Berroa 4, Office 215, Tajonar, Spain, 31192).",
+      "text2": "Además, contamos con empleados repartidos por todo el mundo, en Andorra, Alemania, Austria, Reino Unido, Italia, Canadá, México y Argentina."
+    }
+  },
+
+  "manifest": {
+    "title": "Manifiesto",
+    "subtitle": "Discover new dimensions of gaming",
+    "text1": "Creamos juegos que te volverán loco, ¡MANIAC! Al igual que nosotros.",
+    "text2": "Desde épicas carreras espaciales hasta aventuras legendarias donde conquistar el cosmos y salvar el mundo, jugamos a todo. Con dados y un tablero, con un teclado o un mando, ¡e incluso peleas con bambú! Dicen que estamos obsesionados con los videojuegos, y tienen razón. Pero, ¿quién no lo está?",
+    "text3": "Aquí en Maniac Panda amamos tanto los videojuegos que los conectamos entre sí. Parece una locura pero, ¡por eso estás aquí, MANIAC! Imagina ganar recompensas en un juego y gastarlas en otro. Increíble, ¿verdad? Bueno... Queríamos hacerlo y lo hicimos.",
+    "text4": "Bienvenido a Maniac Panda Games. Aquí alimentaremos cada día tu locura por los videojuegos, siempre buscando recompensar tu talento, ya sea detrás de un volante, apuntando con un arma o desplazándote frenéticamente por el teclado. Buscamos explorar cada habilidad, cada posibilidad, cada dimensión.",
+    "text5": "¿Estás listo para jugar, MANIAC?"
+  },
+
+  "cookies": {
+    "c01": "Política de cookies",
+    "c02": "Definición y función de las cookies",
+    "c03": "Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.",
+    "c04": "Las Cookies pueden ser:",
+    "c05": "Cookies propias: ",
+    "c06": "Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario.",
+    "c07": "Cookies de terceros: ",
+    "c08": "Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos través de las cookies.",
+    "c09": "Cookies de sesión: ",
+    "c10": "Son un tipo de cookies diseñadas para recabar y almacenar datos mientras el usuario accede a una página web.",
+    "c11": "Cookies técnicas: ",
+    "c12": "Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de vídeos o sonido o compartir contenidos a través de redes sociales.",
+    "c13": "Cookies de análisis: ",
+    "c14": "Son aquéllas que permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.",
+    "c15": "¿Qué tipos de cookies utiliza esta página web?",
+    "c16": "Nombre",
+    "c17": "Categoría",
+    "c18": "Descripción",
+    "c19": "Propiedad",
+    "c20": "Duración",
+    "c21": "_ga",
+    "c22": "Análisis",
+    "c23": "Se usa para distinguir a los usuarios.",
+    "c24": "Terceros",
+    "c25": "2 años",
+    "c26": "_gat",
+    "c27": "Publicidad",
+    "c28": "Se usa para diferenciar entre los diferentes objetos de seguimiento creados en la sesión.",
+    "c29": "Terceros",
+    "c30": "1 minuto",
+    "c31": "_gid",
+    "c32": "Análisis",
+    "c33": "Se usa para distinguir a los usuarios.",
+    "c34": "Terceros",
+    "c35": "24 horas",
+    "c36": "wfwaf-authcookie",
+    "c37": "Técnicas",
+    "c38": "Sirve para proteger al Usuario del sitio.",
+    "c39": "El sitio",
+    "c40": "30 minutos",
+    "c41": "¿Cómo administrar cookies en el navegador?",
+    "c42": "El usuario acepta expresamente, por la utilización de este Sitio web, el tratamiento de la información recabada en la forma y con los fines anteriormente mencionados. Y asimismo reconoce conocer la posibilidad de rechazar el tratamiento de tales datos o información rechazando el uso de Cookies mediante la selección de la configuración apropiada a tal fin en su navegador. Si bien esta opción de bloqueo de Cookies en su navegador puede no permitirle el uso pleno de todas las funcionalidades del Website.",
+    "c43": "Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:",
+    "c44": "Chrome: ",
+    "c45": "Firefox: ",
+    "c46": "Internet Explorer: ",
+    "c47": "Safari: ",
+    "c48": "Opera: "
+  },
+
+  "legalAdvice": {
+    "l01": "Aviso legal",
+    "l02": "Al acceder y utilizar este servicio, usted acepta y accede a estar obligado por los términos y disposiciones de este acuerdo. Asimismo, al utilizar estos servicios particulares, usted estará sujeto a toda regla o guía de uso correspondiente que se haya publicado para dichos servicios. Toda participación en este servicio constituirá la aceptación de este acuerdo. Si no acepta cumplir con lo anterior, por favor, no lo utilice. Según el artículo 10 de la Ley de Servicios de la Sociedad de la Información y del Comercio Electrónico (en adelante, LSSI), de forma obligatoria, permanente, fácil, directa y gratuita.",
+    "l03": "Titularidad de la web: ManiacPanda Games Legal. Propiedad de Nexxyo Labs",
+    "l04": "CIF/NIF: B-71.379.507",
+    "l05": "Dirección postal: Pol. Berroa, 4. Of. 215. 31192 Tajonar. Navarra. Spain",
+    "l06": "Email: info@ManiacPanda.com",
+    "l07": "Inscrita la sociedad en el Registro Mercantil de Navarra (K8801323)"
+  },
+
+  "privacyPolicy": {
+    "p01": "Política de privacidad",
+    "p02": "Responsable del tratamiento de tus datos:",
+    "p03": "Identidad: ManiacPanda Games Legal. Propiedad de Nexxyo Labs",
+    "p04": "CIF/NIF: B-71.379.507",
+    "p05": "Dirección postal: Pol. Berroa, 4. Of. 215. 31192 Tajonar. Navarra. Spain",
+    "p06": "Correo electrónico: info@ManiacPanda.com",
+    "p07": "Delegado Protección de datos: Daniel Valdes Araiz (72.817.870-P)",
+    "p08": "Contacto DPD: info@ManiacPanda.com",
+    "p09": "Inscrita la sociedad en el Registro Mercantil de Navarra (K8801323)",
+    "p10": "¿Cuál es la finalidad del tratamiento de tus datos personales?",
+    "p11": "En ManiacPanda.com tratamos la información que nos facilitan las personas interesadas con los siguientes fines:",
+    "p12": "Con el fin de gestionar el envío de la información que nos soliciten, facilitar a los interesados ofertas de productos y servicios de su interés, poder ofrecerle nuestros productos y servicios de acuerdo con sus intereses, mejorar su experiencia de usuario. Para cumplir estos fines elaboraremos un perfil comercial en base a la información facilitada. No se tomarán decisiones automatizadas en base a los perfiles de la base de datos. Sí se enviarán correos electrónicos automatizados, previamente programados por el titular de los datos o de sus proveedores de servicios o asalariados, con la finalidad de enviar la información de las novedades del blog, y de los productos comerciales que se ofrecerán a través de esta web, tanto si están alojados en ella como en plataformas de terceros proveedores de dicho servicio. También utilizaremos todo tipo de cookies que consideremos adecuados a nuestra marca personal.",
+    "p13": "¿Por cuánto tiempo conservaremos tus datos?",
+    "p14": "Los datos personales proporcionados en la web ManiacPanda.com se conservarán durante un plazo de diez años a partir de la última confirmación de su interés. También se conservarán mientras se mantenga la relación mercantil. Se harán desaparecer cuando se solicite su supresión o portabilidad por el interesado.",
+    "p15": "Legitimación",
+    "p16": "La base legal para el tratamiento de tus datos es la ejecución de la suscripción online al blog o al formulario de contacto de la web ManiacPanda.com así como el acceso a todos los productos adquiridos en dicha web. La oferta de productos y servicios está basada en el consentimiento que se te solicita, sin que en ningún caso la retirada de este consentimiento condicione la ejecución de servicios o la entrega de productos pendientes.",
+    "p17": "Destinatarios a los que se comunicarán tus datos",
+    "p18": "Los datos recogidos a través de esta web se comunicarán a otras empresas del grupo empresarial para fines administrativos internos, incluido el tratamiento de datos personales de clientes o empleados. ManiacPanda Games Legal. Propiedad de Nexxyo Labs y a quien se comuniquen los datos dispondrán de normas corporativas vinculantes aprobadas por el Comité Europeo de protección de datos y disponibles en este documento.",
+    "p19": "¿Cuáles son tus derechos cuando nos facilitas tus datos?",
+    "p20": "Cualquier persona tiene derecho a obtener la confirmación sobre si ManiacPanda Games Legal. Propiedad de Nexxyo Labs está tratando datos personales que les conciernan o no. Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. ManiacPanda Games Legal. Propiedad de Nexxyo Labs dejará de tratar los datos, salvo por motivos legítimos imperiosos o el ejercicio o la defensa de posibles reclamaciones.",
+    "p21": "¿Cómo hemos obtenido tus datos?",
+    "p22": "Los datos personales que tratamos en ManiacPanda.com proceden o bien de la propia web, correo electrónico, mensajería instantánea o correo postal de nuestra empresa o de empresas del grupo. Las categorías de datos que tratamos son: Datos de identificación, códigos o claves de identificación, direcciones postales o electrónicas, información comercial, datos económicos. También informamos que no obtenemos datos especialmente protegidos de forma habitual. Si llegan a nuestra empresa datos especialmente protegidos los protegeremos de acuerdo con la normativa vigente.",
+    "p23": "Política de cookies",
+    "p24": "Toda la información disponible en: ",
+    "p25": "Responsabilidades",
+    "p26": "Renuncia a cualquier responsabilidad",
+    "p27": "Esta página y sus componentes se ofrecen únicamente con fines informativos. ManiacPanda Games Legal. Propiedad de Nexxyo Labs, titular de esta página no se hace responsable de la exactitud, utilidad o disponibilidad de cualquier información que se transmita o ponga a disposición a través de la misma; no será responsable por cualquier error u omisión en dicha información. Los usuarios de esta página que den sus datos personales, con la aceptación del consentimiento informado renuncian a cualquier indemnización que por el uso legal de esos datos les pudiera corresponder, no pudiendo ejercer ninguna reclamación legal por ello. De querer ostentarla, no deben ceder sus datos en este sitio web.",
+    "p28": "Menores de edad",
+    "p29": "Nuestros servicios y productos son para mayores de 18 años. Los menores de esta edad no están autorizados a utilizar nuestros servicios y no deberán, por tanto, enviarnos sus datos personales.",
+    "p30": "Política de enlaces de nuestra web",
+    "p31": "Responsabilidad. El prestador se exime de cualquier tipo de responsabilidad derivada de la información publicada en su sitio web, siempre que esta información haya sido manipulada o introducida por un tercero ajeno al mismo. El servicio de acceso al Portal incluye enlaces o links que pueden conducir al usuario a otros sitios y páginas web gestionados por terceros, sobre las que ManiacPanda Games Legal. Propiedad de Nexxyo Labs no ejerce ningún tipo de control.",
+    "p32": "En estos casos, ManiacPanda Games Legal. Propiedad de Nexxyo Labs actúa como prestador de servicios de intermediación de conformidad con lo dispuesto en el artículo 17 de la LSSICE. ManiacPanda Games Legal. Propiedad de Nexxyo Labs no responde ni de los contenidos ni del estado de dichos sitios y páginas web. El prestador no se hace responsable de la información y contenidos almacenados, a título enunciativo, pero no limitativo, en foros, chat´s, generadores de blogs, comentarios, redes sociales o cualquier otro medio que permita a terceros publicar contenidos de forma independiente en la página web del prestador.",
+    "p33": "No obstante, y en cumplimiento de lo dispuesto en el art. 11 y 16 de la LSSICE, el prestador se pone a disposición de todos los usuarios, autoridades y fuerzas de seguridad, y colaborando de forma activa en la retirada o en su caso bloqueo de todos aquellos contenidos que pudieran afectar o contravenir la legislación nacional, o internacional, derechos de terceros o la moral y el orden público. No queremos que nos enlacen a otras páginas, quedando prohibido deep-links, enlaces IMG o de imagen, frames, que puedan hacer entender al usuario que están en otra web que no es la nuestra. El usuario debe ser consciente de que nuestra empresa no es responsable de las prácticas de privacidad de esas otras webs.",
+    "p34": "Recomendamos a los usuarios que sean conscientes de que al utilizar uno de estos links están abandonando nuestra web y que lean las políticas de privacidad de esas otras webs que recaben datos personales. La presente política de privacidad sólo se aplica a los datos personales recabados a través de esta web.",
+    "p35": "Propiedad intelectual",
+    "p36": "El Usuario reconoce y acepta que todos los derechos de propiedad industrial e intelectual sobre los contenidos y cualesquiera otros elementos insertados en el Sitio Web pertenecen a ManiacPanda Games Legal. Propiedad de Nexxyo Labs.",
+    "p37": "La totalidad del contenido del sitio web, incluyendo a título enunciativo, pero no limitativo su programación, edición, compilación y demás elementos necesarios para su funcionamiento, los diseños, logotipos, texto y/o gráficos, imágenes, material gráfico o artístico presente en la web, son propiedad del prestador o en su caso dispone de licencia o autorización expresa por parte de los autores.",
+    "p38": "Todos los contenidos del sitio web están protegidos por derechos de propiedad industrial e intelectual, inscritos en los correspondientes registros públicos bajo la titularidad de ManiacPanda Games Legal. Propiedad de Nexxyo Labs o de terceros, sin que puedan entenderse cedidos al Usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso del Portal.",
+    "p39": "Se autoriza a cualquier persona física o jurídica el establecimiento en sus páginas o sitios web de enlaces a la web, tanto a su página principal como a cualquiera de sus páginas. No obstante, se prohíben expresamente los enlaces a cualquiera de las páginas del sitio web que impliquen el visionado de las mismas en el navegador por medio de marcos o frames.",
+    "p40": "Todos los contenidos que se muestran en esta web están sujetos y protegidos por los derechos de propiedad intelectual e industrial. No está permitido la alteración, explotación, reproducción, distribución o comunicación pública y puesta a disposición sobre los contenidos del curso sin la previa autorización expresa del titular de la web.",
+    "p41": "La página y su contenido original, las características y la funcionalidad son propiedad de ManiacPanda Games Legal. Propiedad de Nexxyo Labs y están protegidos por derechos de autor de carácter internacional, marcas registradas, patentes, secretos comerciales y demás leyes de propiedad intelectual o de derechos de propiedad.",
+    "p42": "Rescisiones y cambios",
+    "p43": "Rescisión",
+    "p44": "Podemos cancelar tu acceso a la página, sin causa o aviso, lo cual podrá resultar en la incautación y destrucción de toda la información que esté asociada con su cuenta. Todas las disposiciones de este acuerdo que, por su naturaleza, deban sobrevivir a la cancelación sobrevivirán a ella, incluyendo sin limitación, las disposiciones de propiedad, renuncias de garantía, indemnización y limitaciones de responsabilidad.",
+    "p45": "Cambios de condiciones",
+    "p46": "La empresa se reserva el derecho de modificar estas condiciones cuando lo considere oportuno; asimismo, el uso permanente de la página significará su aceptación de cualquier ajuste a tales términos. Si hay algún cambio en nuestra política de privacidad, anunciaremos en nuestra página principal y en otras páginas importantes de nuestro sitio que se han hecho tales cambios. Si hay algún cambio en nuestra página respecto a la manera en que usamos la información de identificación personal de nuestros clientes, enviaremos una notificación por correo electrónico o correo postal a aquellos que sean afectados por el cambio. Todo cambio en nuestra política de privacidad se publicará en nuestra página 30 días antes de que tales cambios ocurran. Por lo tanto, se le recomienda volver a leer esta declaración de manera regular”.",
+    "p47": "Normativa y resolución de conflictos",
+    "p48": "Las presentes Condiciones de Uso del ManiacPanda.com se rigen en todos y cada uno de sus extremos por la ley española. El idioma de redacción e interpretación de este aviso legal es el español. Este aviso legal no se archivará individualmente para cada usuario, sino que permanecerá accesible por medio de Internet en este mismo Sitio Web.",
+    "p49": "Los Usuarios que tengan la condición de consumidores o usuarios conforme los define la normativa española y residan en la Unión Europea, si han tenido un problema con una compra online realizada a ManiacPanda.com, para tratar de llegar a un acuerdo extrajudicial pueden acudir a la Plataforma de Resolución de Litigios en Línea, creada por la Unión Europea y desarrollada por la Comisión Europea al amparo del Reglamento (UE) 524/2013.",
+    "p50": "Siempre que el Usuario no sea consumidor o usuario, y cuando no haya una norma que obligue a otra cosa, las partes acuerdan someterse a los Juzgados y Tribunales de Pamplona capital, por ser este el lugar de celebración del contrato, con renuncia expresa a cualquier otra jurisdicción que pudiera corresponderles."
+  }
+}

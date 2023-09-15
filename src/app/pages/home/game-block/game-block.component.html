@@ -1,0 +1,32 @@
+<div class="section game {{align}}"
+  [ngStyle]="{'background-image': 'url(\'/assets/images/games/' + game.folder + '/background_desktop.png\')'}"
+>
+  <div class="limiter">
+    <!-- Game character image -->
+    <div class="image">
+      <img src="assets/images/games/{{game.folder}}/image.png" alt="{{game.name}} image" id="{{game.folder}}_imageDesktop" class="desktop" />
+      <img src="assets/images/games/{{game.folder}}/imageResponsive.png" alt="{{game.name}} image" id="{{game.folder}}_imageMobile" class="mobile" />
+    </div>
+
+    <div class="info">
+      <!-- Social media button -->
+      <div class="social">
+        <p class="btn btn-red">{{'home.socialMedia' | translate}}</p>
+        <div class="social-links">
+          <a *ngFor="let game of game.social | keyvalue" href="{{game.value}}" target="_blank"><img src="assets/images/social/{{game.key}}.svg" class="icon"></a>
+        </div>
+      </div>
+      <!-- Game logo -->
+      <a href="{{game.website}}" target="_blank" class="logo-link">
+        <img src="assets/images/games/{{game.folder}}/logoResponsive.svg" alt="{{game.name}} logo" class="logo logo-mobile" id="{{game.folder}}_logoMobile" />
+        <img src="assets/images/games/{{game.folder}}/logo.svg" alt="{{game.name}} logo" class="logo logo-desktop" id="{{game.folder}}_logoDesktop" />
+      </a>
+      <!-- Link to game -->
+      <p class="btn btn-red to-game"><a href="{{game['gameLink' + selectedLanguage]}}" target="_blank">{{'home.gameLinkTypes.' + game.gameLinkType | translate}}</a></p>
+      <!-- Link to trailer -->
+      <p class="trailer"><a href="{{game.video}}" target="_blank">{{'home.watchTrailer' | translate}}</a></p>
+      <!-- Game description -->
+      <p class="text">{{game['text' + selectedLanguage]}}</p>
+    </div>
+  </div>
+</div>

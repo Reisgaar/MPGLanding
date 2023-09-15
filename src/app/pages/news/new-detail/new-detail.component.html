@@ -1,0 +1,112 @@
+<div class="new">
+  <div class="limiter">
+    <p class="back" [routerLink]="['/news']">
+      <mat-icon class="icon">arrow_back</mat-icon>
+      <span class="text">Back</span>
+    </p>
+    <div class="new-detail">
+      <p class="arrow prev"
+        *ngIf="newId > 0"
+        (mousedown)="preventScroll($event)"
+        (click)="clickToDetail(newId - 1)"
+        (auxclick)="wheelToDetail($event, newId - 1)"
+      >
+        <mat-icon class="icon">keyboard_arrow_left</mat-icon>
+        <span class="text">Read previous</span>
+      </p>
+      <p class="arrow next"
+        *ngIf="newId < maxNews"
+        (mousedown)="preventScroll($event)"
+        (click)="clickToDetail(newId + 1)"
+        (auxclick)="wheelToDetail($event, newId + 1)"
+      >
+        <span class="text">Read next</span>
+        <mat-icon class="icon">keyboard_arrow_right</mat-icon>
+      </p>
+
+      <p class="title" [innerHTML]="orNew['language.lang' | translate].title"></p>
+      <p class="subtitle" [innerHTML]="orNew['language.lang' | translate].subtitle"></p>
+      <img class="image" src="assets/images/news/{{newId}}/main.png" alt="Image of the new">
+      <p class="text" [innerHTML]="sanitize(orNew['language.lang' | translate].text)"></p>
+      <!-- <div *ngIf="orNew['language.lang' | translate].video !== ''" class="video">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/51xgJy0MIAI"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          >
+          </iframe>
+        </div>
+      </div> -->
+      <p class="date">{{orNew['language.lang' | translate].date}}</p>
+
+      <div class="social">
+        <h3>Share</h3>
+        <a class="bsocial" href="https://twitter.com/intent/tweet?url={{url}}" rel="noopener" target="_blank">
+          <div class="bsocial_bg"></div>
+          <div class="bsocial_i">
+            <svg viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.128 1.423a5.559 5.559 0 0 1-1.656.477A3.015 3.015 0 0 0 13.74.224a5.591 5.591 0 0 1-1.831.735A2.845 2.845 0 0 0 10.273.04a2.764 2.764 0 0 0-1.83.319 2.975 2.975 0 0 0-1.268 1.423 3.17 3.17 0 0 0-.18 1.94 7.883 7.883 0 0 1-3.291-.92A8.277 8.277 0 0 1 1.053.558c-.248.448-.39.968-.39 1.522 0 .499.116.99.34 1.43.224.44.547.815.942 1.091A2.772 2.772 0 0 1 .64 4.221v.04c0 .699.23 1.377.652 1.918A2.864 2.864 0 0 0 2.952 7.23a2.77 2.77 0 0 1-1.302.052 3.03 3.03 0 0 0 1.026 1.505 2.796 2.796 0 0 0 1.668.598 5.611 5.611 0 0 1-4.27 1.254A7.873 7.873 0 0 0 4.494 12c5.304 0 8.203-4.614 8.203-8.617 0-.13-.003-.26-.008-.39a6.034 6.034 0 0 0 1.438-1.568v-.002Z"></path>
+            </svg>
+          </div>
+        </a>
+        <a class="bsocial" href="https://www.facebook.com/sharer/sharer.php?u={{url}}" rel="noopener" target="_blank">
+          <div class="bsocial_bg"></div>
+          <div class="bsocial_i fb">
+            <svg viewBox="0 0 10 19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m9.153 10.441.514-3.293H6.494V5.014c0-.903.441-1.776 1.863-1.776H9.8V.425A17.502 17.502 0 0 0 7.233.2C4.615.2 2.906 1.778 2.906 4.631v2.507H0v3.303h2.906v7.96h3.593v-7.96h2.654Z"></path>
+            </svg>
+          </div>
+        </a>
+        <a class="bsocial" href="https://www.linkedin.com/shareArticle?url={{url}}" rel="noopener" target="_blank">
+          <div class="bsocial_bg"></div>
+          <div class="bsocial_i lin">
+            <svg viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.313 18V5.855H.24V18h4.073ZM2.277 4.197c1.42 0 2.305-.933 2.305-2.099C4.555.907 3.697 0 2.304 0 .912 0 0 .907 0 2.098c0 1.166.884 2.099 2.25 2.099h.027ZM6.567 18h4.072v-6.782c0-.363.028-.726.135-.985.294-.726.965-1.476 2.09-1.476 1.474 0 2.064 1.113 2.064 2.746V18H19v-6.964c0-3.73-2.009-5.466-4.688-5.466-2.197 0-3.162 1.219-3.698 2.046h.027V5.855H6.568c.054 1.138 0 12.145 0 12.145Z"></path>
+            </svg>
+          </div>
+        </a>
+        <a class="bsocial" (click)="copyTextToClipboard()">
+          <div class="bsocial_bg"></div>
+          <div class="bsocial_i cli">
+            <svg viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.307 17.78a5.28 5.28 0 0 1 0-7.467l6.8-6.799a3.96 3.96 0 1 1 5.599 5.6l-4.933 4.932a2.639 2.639 0 1 1-3.733-3.733l2.133-2.133a.754.754 0 1 1 1.066 1.067l-2.133 2.133a1.13 1.13 0 1 0 1.6 1.6l4.933-4.933a2.451 2.451 0 1 0-3.466-3.467l-6.8 6.8a3.77 3.77 0 1 0 5.333 5.333l5.867-5.866a.754.754 0 0 1 1.066 1.066l-5.866 5.866a5.28 5.28 0 0 1-7.466 0Z"></path>
+            </svg>
+          </div>
+        </a>
+        <a class="bsocial" href="mailto:?body={{url}}">
+          <div class="bsocial_bg"></div>
+          <div class="bsocial_i mail">
+            <svg viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.665 2.446a2.279 2.279 0 0 0-.804-1.196A2.17 2.17 0 0 0 17.517.8H2.97c-.636 0-1.247.26-1.697.723A2.505 2.505 0 0 0 .57 3.27v9.462c0 .655.253 1.283.703 1.746.45.463 1.06.723 1.697.723h14.4c.636 0 1.246-.26 1.696-.723.45-.463.703-1.091.703-1.746V3.27a2.396 2.396 0 0 0-.104-.823ZM6.57 8.564l-4.4 3.608V5.326l4.4 3.238Zm1.256 1.074.944.687c.403.29.884.446 1.376.446.492 0 .972-.156 1.376-.446l.992-.712 4.775 3.941H3.05l4.776-3.916Zm6-1.07 4.343-3.107v6.711l-4.343-3.604Zm3.543-6.122c.421-.001.77.333.8.765a.64.64 0 0 1-.28.453l-7.32 5.184a.781.781 0 0 1-.903 0L2.674 3.655a.677.677 0 0 1-.241-.748.65.65 0 0 1 .62-.461H17.37Z"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="more-news" id="more-news">
+      <h3>Other news</h3>
+      <div class="new-wrapper">
+        <div class="new"
+          *ngFor="let orNew of threeNews"
+          (mousedown)="preventScroll($event)"
+          (click)="clickToDetail(orNew.en.id)"
+          (auxclick)="wheelToDetail($event, orNew.en.id)"
+        >
+          <p class="title" [innerHTML]="orNew['language.lang' | translate].title"></p>
+          <div class="data">
+            <div class="image">
+              <p class="subtitle" [innerHTML]="orNew['language.lang' | translate].subtitle"></p>
+              <img src="assets/images/news/{{orNew.en.id}}/main.png" alt="Image of the new">
+            </div>
+            <p class="text" [innerHTML]="orNew['language.lang' | translate].textResume"></p>
+          </div>
+          <p class="date">{{orNew['language.lang' | translate].date}}</p>
+          <p class="read-time">Read time: {{calcReadTime(orNew['language.lang' | translate].text)}} min</p>
+        </div>
+      </div>
+      <p class="view-more" [routerLink]="['/news']">view more</p>
+    </div>
+  </div>
+</div>

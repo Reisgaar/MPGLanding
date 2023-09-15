@@ -1,0 +1,31 @@
+
+// COLORS
+$white: #ffffff;
+$white-hover: #ffffff22;
+
+$black: #000000;
+
+$purple: #332350;
+$purple-hover: #47326e;
+$purple-light: #6e44c5;
+
+$red: #B45466;
+$red-light: #f96581;
+$red-hover: #a51d36;
+$red-opacity: #b45466dd;
+$red-opacity-low: #b4546677;
+
+// FONTS
+$grazler: 'grazler', sans-serif;
+$dekard: 'dekard', sans-serif;
+$figtree: 'Figtree', sans-serif;
+
+@font-face {
+  font-family: 'grazler';
+  src: url('/assets/fonts/grazler.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'dekard';
+  src: url('/assets/fonts/dekard.ttf') format("truetype");
+}

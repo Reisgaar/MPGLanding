@@ -1,0 +1,16 @@
+<img *ngIf="actualRoute !== '/' && actualRoute !== '/home'" src="assets/images/logo_mini.svg" [routerLink]="'/home'" class="logo" alt="Maniac Panda logo">
+
+<img src="assets/images/menu_icon.svg" (click)="switchMenu()" class="hamburger" alt="Menu icon">
+
+<div class="menu-wrapper" [class.pointer]="menuIsVisible">
+  <div class="lang" (click)="changeLanguage()" [class.visible]="menuIsVisible">
+    <p>{{actualLanguage | uppercase}}</p>
+  </div>
+  <div class="menu" [class.visible]="menuIsVisible">
+    <p class="tab" [routerLink]="'/team'" [class.active]="actualRoute.includes('/team')" (click)="closeMenu()">{{'menu.team' | translate}}</p>
+    <p class="tab" (click)="closeMenu()"><a href="{{'menu.mediaKitRoute' | translate}}" target="_blank">{{'menu.mediaKit' | translate}}</a></p>
+    <!-- <p class="tab" [routerLink]="'/contact'" [class.active]="actualRoute.includes('/contact')" (click)="closeMenu()">{{'menu.contact' | translate}}</p> -->
+    <p class="tab" [routerLink]="'/manifest'" [class.active]="actualRoute.includes('/manifest')" (click)="closeMenu()">{{'manifest.title' | translate}}</p>
+    <p class="tab" [routerLink]="'/news'" [class.active]="actualRoute.includes('/news')" (click)="closeMenu()">{{'menu.news' | translate}}</p>
+  </div>
+</div>

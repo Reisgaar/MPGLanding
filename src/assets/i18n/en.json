@@ -1,0 +1,212 @@
+{
+
+  "menu": {
+    "games": "Games",
+    "team": "Team",
+    "mediaKit": "Media Kit",
+    "news": "News",
+    "mediaKitRoute": "assets/documents/Maniac_Panda_Dossier_EN.pdf",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "stayConnected": "Stay Connected",
+    "followUs": "Follow Us",
+    "contact": "Contact",
+    "legal": {
+      "title": "Legal",
+      "legalNotice": "Legal Notice",
+      "privacyPolicy": "Privacy Policy",
+      "cookiesPolicy": "Cookies Policy"
+    }
+  },
+
+  "home": {
+    "games": "Games",
+    "watchTrailer": "Watch Trailer",
+    "socialMedia": "Social Media",
+    "claim": "Discover new dimensions of gaming",
+    "watchButton": "Watch our games",
+    "nextGame": "Next game",
+    "gameLinkTypes": {
+      "download": "Download",
+      "preAlpha": "Pre Alpha",
+      "beta": "Beta",
+      "techDemo": "Tech Demo",
+      "wishlist": "Wishlist"
+    }
+  },
+
+  "language": {
+    "lang": "en"
+  },
+
+  "team": {
+    "title": "Discover the global team behind Maniac Panda Games",
+    "name": "text",
+    "external": "External / Outsourcing",
+    "departments": {
+      "creativeLeadership": "Creative Leadership",
+      "production": "Production",
+      "design": "Design",
+      "conceptArt": "Concept Art",
+      "uiArt": "UI Art",
+      "art3D": "3D Art",
+      "animator3D": "3D Animator",
+      "environmentArt": "Environment Art",
+      "techArt": "Tech Art",
+      "vfxArt": "VFX Art",
+      "gameDevelopment": "Game Development",
+      "qa": "QA",
+      "serverBackendDevops": "Server / Backend / Devops",
+      "blockchainWebDevelopment": "Blockchain / Web Development",
+      "itSecurity": "IT / Security",
+      "marketingBusiness": "Marketing / Business",
+      "legalAdministrationHr": "Legal / Administration / Human Resources"
+    }
+  },
+
+  "contact": {
+    "text1": "Any questions?",
+    "text2": "Contact us!",
+    "form": {
+      "interest": "Interested in",
+      "name": "Full name",
+      "email": "Email",
+      "country": "Country",
+      "phone": "Telephone",
+      "message": "Message",
+      "terms": "Agree to Terms and Conditions",
+      "submit": "Send"
+    },
+    "map": {
+      "title": "Our employees worldwide",
+      "text1": "Our main headquarters are located in Spain, in the region of Navarra (Calle del Pol. Ind. Berroa 4, Office 215, Tajonar, Spain, 31192).",
+      "text2": "Additionally, we have employees all over the world, distributed in Andorra, Germany, Austria, United Kingdom, Italy, Canada, Mexico, and Argentina."
+    }
+  },
+
+  "manifest": {
+    "title": "Manifest",
+    "subtitle": "Discover new dimensions of gaming",
+    "text1": "We create games that will drive you crazy, MANIAC! Like us.",
+    "text2": "From space races to conquering the cosmos and saving the world, we play at everything. With dice and a table, with a keyboard or a gamepad, and even fights with bamboo! They say we're obsessed with gaming, and they're right. But who isn't?",
+    "text3": "Here at Maniac Panda, we love games so much that we connect them to each other. It seems crazy, but that's why you're here, Maniac! Imagine winning rewards in one game and spending them in another. Crazy, right? Well... We wanted to do it and we did it.",
+    "text4": "Welcome to Maniac Panda Games. Here, we will make you crazier and crazier about playing, always seeking to reward your talent, whether it's behind the wheel, aiming a gun, or how fast your fingers move across the keyboard. We seek to explore every gameplay, every possibility, every dimension.",
+    "text5": "Are you ready to play, MANIAC!?"
+  },
+
+  "cookies": {
+    "c01": "Cookies policy",
+    "c02": "Definition and function of cookies",
+    "c03": "A cookie is a file that is downloaded to your computer when you access certain web pages. Cookies allow a web page, among other things, to store and retrieve information about the browsing habits of a user or their equipment and, depending on the information they contain and the way they use their equipment, they can be used to recognize to user.",
+    "c04": "Cookies can be:",
+    "c05": "Own cookies: ",
+    "c06": "Are those that are sent to the user's terminal equipment from a computer or domain managed by the editor itself and from which the service requested by the user is provided.",
+    "c07": "Third party cookies: ",
+    "c08": "These are those that are sent to the user's terminal equipment from a computer or domain that is not managed by the publisher, but by another entity that processes the data obtained through the cookies.",
+    "c09": "Session Cookies: ",
+    "c10": "These are a type of cookies designed to collect and store data while the user accesses a web page.",
+    "c11": "Technical cookies: ",
+    "c12": "Are those that allow the user to navigate through a web page, platform or application and the use of different options or services that exist in it, such as controlling traffic and data communication, identifying the session, access restricted access parts, remember the elements that make up an order, perform the purchase process of an order, make the request for registration or participation in an event, use security elements during navigation, store contents for dissemination of videos or sound or share content through social networks.",
+    "c13": "Analysis Cookies: ",
+    "c14": "These are those that allow the person responsible for them to monitor and analyze the behaviour of the users of the websites to which they are linked. The information collected through this type of cookies is used in the measurement of the activity of the websites, application or platform and for the elaboration of navigation profiles of the users of said sites, applications and platforms, in order to introduce improvements in function of the analysis of the data of use made by the users of the service.",
+    "c15": "What types of cookies does this website use?",
+    "c16": "Name",
+    "c17": "Category",
+    "c18": "Description",
+    "c19": "Property",
+    "c20": "Duration",
+    "c21": "_ga",
+    "c22": "Analysis",
+    "c23": "It is used to distinguish users.",
+    "c24": "Third party",
+    "c25": "2 years",
+    "c26": "_gat",
+    "c27": "Advertising",
+    "c28": "It is used to differentiate between the different tracking objects created in the session.",
+    "c29": "Third party",
+    "c30": "1 minute",
+    "c31": "_gid",
+    "c32": "Analysis",
+    "c33": "It is used to distinguish users.",
+    "c34": "Third party",
+    "c35": "24 hours",
+    "c36": "wfwaf-authcookie",
+    "c37": "Techniques",
+    "c38": "It serves to protect the User from the site.",
+    "c39": "The website",
+    "c40": "30 minutes",
+    "c41": "How to manage cookies in the browser?",
+    "c42": "The user expressly accepts, for the use of this Website, the treatment of the information collected in the manner and with the aforementioned purposes. And it also recognizes to know the possibility of rejecting the treatment of such data or information rejecting the use of Cookies by selecting the appropriate configuration for this purpose in your browser. Although this option to block cookies in your browser may not allow full use of all the functionality of the Website.",
+    "c43": "You can allow, block or delete the cookies installed on your computer by configuring the browser options installed on your computer:",
+    "c44": "Chrome: ",
+    "c45": "Firefox: ",
+    "c46": "Internet Explorer: ",
+    "c47": "Safari: ",
+    "c48": "Opera: "
+  },
+
+  "legalAdvice": {
+    "l01": "Legal notice",
+    "l02": "By accessing and using this service, you accept and agree to be bound by the terms and provisions of this agreement. Likewise, when using these particular services, you will be subject to any rule or guide of corresponding use that has been published for said services. All participation in this service will constitute acceptance of this agreement. If you do not agree to comply with the above, please do not use it. According to article 10 of the Law on Services of the Information Society and Electronic Commerce (hereinafter LSSI), in a mandatory, permanent, easy, direct and freeway.",
+    "l03": "Ownership of the website: ManiacPanda Games Legal. Property of Nexxyo Labs",
+    "l04": "CIF/NIF: B-71.379.507",
+    "l05": "Mailing address: Pol. Berroa, 4. Of. 215. 31192 Tajonar. Navarra. Spain",
+    "l06": "Email: m.martinez@norlet.net",
+    "l07": "The company registered in the Mercantile Registry of Navarra (K8801323)"
+  },
+
+  "privacyPolicy": {
+    "p01": "Privacy policy",
+    "p02": "Responsible for the processing of your data:",
+    "p03": "Identity: ManiacPanda Games Legal. Property of Nexxyo Labs",
+    "p04": "CIF/NIF: B-71.379.507",
+    "p05": "Mailing address: Pol. Berroa, 4. Of. 215. 31192 Tajonar. Navarra. Spain",
+    "p06": "Email: info@maniacpanda.com ",
+    "p07": "Delegate data protection: Marisa Martinez Villaseca",
+    "p08": "DPD contact: m.martinez@norlet.net ",
+    "p09": "The company registered in the Mercantile Registry of Navarra (K8801323)",
+    "p10": "What is the purpose of the processing of your personal data?",
+    "p11": "At ManiacPanda.com we treat the information provided by interested persons with the following purposes:",
+    "p12": "In order to manage the delivery of the information requested, provide interested parties with offers of products and services of interest, to offer our products and services according to their interests, improve your user experience. To fulfil these purposes, we will elaborate a commercial profile based on the information provided. Automated decisions will not be made based on the profiles of the database. Yes, automated emails will be sent, previously programmed by the owner of the data or their service providers or employees, in order to send information on the news of the blog, and commercial products that will be offered through this website, whether they are hosted on it or on platforms from third-party service providers. We will also use all types of cookies that we consider appropriate to our personal brand.",
+    "p13": "How long will we keep your data?",
+    "p14": "The personal data provided on the ManiacPanda.com website will be kept for a period of ten years from the last confirmation of your interest. They will also be maintained while the mercantile relationship is maintained. They will disappear when their deletion or portability is requested by the interested party.",
+    "p15": "Legitimation",
+    "p16": "The legal basis for the treatment of your data is the execution of the online subscription to the blog or the contact form of the website ManiacPanda.com as well as access to all the products acquired on said website. The offer of products and services is based on the consent that is requested, without in any case the withdrawal of this consent conditions the execution of services or the delivery of pending products.",
+    "p17": "Recipients to whom your data will be communicated:",
+    "p18": "The data collected through this website will be communicated to other companies of the business group for internal administrative purposes, including the processing of personal data of customers or employees. ManiacPanda Games Legal Property of Nexxyo Labs and to whom the data are communicated will have binding corporate rules approved by the European Committee for data protection and available in this document.",
+    "p19": "What are your rights when you provide us with your information?",
+    "p20": "Anyone has the right to obtain confirmation about whether ManiacPanda Games Legal Property of Nexxyo Labs is processing personal data that concerns them or not. Interested persons have the right to access their personal data, as well as to request the correction of inaccurate data or, where appropriate, request its deletion when, among other reasons, the data is no longer necessary for the purposes that were collected. In certain circumstances, the interested parties may request the limitation of the processing of their data, in which case we will only keep them for the exercise or defense of claims. In certain circumstances and for reasons related to their particular situation, the interested parties may object to the processing of their data. ManiacPanda Games Legal Property of Nexxyo Labs will stop processing the data, except for compelling legitimate reasons or the exercise or defense of possible claims.",
+    "p21": "How have we obtained your data?",
+    "p22": "The personal data we treat in ManiacPanda.com come either from the web itself, email, instant messaging or postal mail of our company or group companies. The categories of data we deal with are: Identification data, codes or identification keys, postal or electronic addresses, commercial information, economic data. We also inform you that we do not obtain specially protected data on a regular basis. If specially protected data reaches our company, we will protect it in accordance with current regulations.",
+    "p23": "Cookies policy",
+    "p24": "All the information available in",
+    "p25": "Responsibilities",
+    "p26": "Waiver of any responsibility",
+    "p27": "This page and its components are offered for informational purposes only. The Workshop of the Silk SL, owner of this page is not responsible for the accuracy, usefulness or availability of any information that is transmitted or made available through it; will not be responsible for any error or omission in said information. The users of this page that give their personal data, with the acceptance of the informed consent renounce any compensation that for the legal use of such data could correspond to them, not being able to exercise any legal claim for it. If you want to hold it, you should not give your information on this website.",
+    "p28": "Minors",
+    "p29": "Our services and products are for over 18 years. Children under this age are not authorized to use our services and should not, therefore, send us their personal information.",
+    "p30": "Links policy of our website",
+    "p31": "Responsibility. The provider is exempt from any type of liability arising from the information published on its website, provided that this information has been manipulated or introduced by a third party outside it. The access service to the Portal includes links that may lead the user to other websites and web pages managed by third parties, over which ManiacPanda Games Legal Property of Nexxyo Labs does not exercise any type of control.",
+    "p32": "In these cases, ManiacPanda Games Legal Property of Nexxyo Labs acts as a provider of intermediation services in accordance with the provisions of article 17 of the LSSICE. ManiacPanda Games Legal Property of Nexxyo Labs does not respond neither to the contents nor to the status of said websites and web pages. The provider is not responsible for the information and stored content, by way of example, but not limited to forums, chat, blog generators, comments, social networks or any other means that allows third parties to publish content independently in the web page of the provider.",
+    "p33": "However, and in compliance with the provisions of art. 11 and 16 of the LSSICE, the provider is made available to all users, authorities and security forces, and actively collaborating in the withdrawal or blocking of any content that could affect or contravene national legislation, or international, rights of third parties or morality and public order. We do not want to link to other pages, being prohibited deep-links, IMG or image links, frames, which can make the user understand that they are on another website that is not ours. The user must be aware that our company is not responsible for the privacy practices of these other websites.",
+    "p34": "We recommend that users be aware that by using one of these links they are leaving our website and that they read the privacy policies of those other websites that collect personal data. This privacy policy only applies to personal data collected through this website.",
+    "p35": "Intellectual property",
+    "p36": "The User acknowledges and accepts that all intellectual and industrial property rights over the contents and any other elements inserted in the Website belong to ManiacPanda Games Legal Property of Nexxyo Labs.",
+    "p37": "The entire content of the website, including but not limited to its programming, editing, compilation and other elements necessary for its operation, the designs, logos, text and / or graphics, images, graphic or artistic material present in the website. web, are the property of the provider or, where appropriate, have a license or express authorization from the authors.",
+    "p38": "All the contents of the website are protected by industrial and intellectual property rights, registered in the corresponding public registers under the ownership of ManiacPanda Games Legal Property of Nexxyo Labs or by third parties, without which any of the exploitation rights of the user may be construed. the same beyond what is strictly necessary for the correct use of the Portal.",
+    "p39": "Any individual or legal entity is authorized to establish links or links to the website on its pages or web sites, both to its main page and to any of its pages. However, links to any of the pages of the website that imply viewing them in the browser through frames or frames are expressly prohibited.",
+    "p40": "All the contents shown on this website are subject to and protected by intellectual and industrial property rights. It is not allowed the alteration, exploitation, reproduction, distribution or public communication and made available on the contents of the course without the prior express authorization of the owner of the web.",
+    "p41": "The page and its original content, features and functionality are the property of ManiacPanda Games Legal Property of Nexxyo Labs and are protected by international copyright, trademarks, patents, trade secrets and other laws of intellectual property or property rights.",
+    "p42": "Rescissions and changes",
+    "p43": "Rescission",
+    "p44": "We may cancel your access to the site, without cause or notice, which may result in the seizure and destruction of all information that is associated with your account. All provisions of this agreement that, by their nature, must survive the cancellation will survive it, including without limitation, property dispositions, waivers of warranty, indemnification and limitations of liability.",
+    "p45": "Changes in conditions",
+    "p46": "The company reserves the right to modify these conditions when it deems appropriate; likewise, the permanent use of the page will signify your acceptance of any adjustment to such terms. If there is any change in our privacy policy, we will announce on our homepage and on other important pages of our site that such changes have been made. If there is any change to our page regarding the way we use our customers' personal identification information, we will send a notification via email or postal mail to those affected by the change. Any change in our privacy policy will be published on our page 30 days before such changes occur. Therefore, it is recommended that you reread this statement on a regular basis.",
+    "p47": "Regulation and conflict resolution",
+    "p48": "The present Conditions of Use of ManiacPanda.com are governed in each and every one of its extremes by Spanish law. The language of drafting and interpretation of this legal notice is Spanish. This legal notice will not be filed individually for each user, but will remain accessible through the Internet on this Website.",
+    "p49": "Users who have the status of consumers or users as defined by Spanish regulations and reside in the European Union, if they have had a problem with an online purchase made to ManiacPanda.com, to try to reach an out-of-court settlement can go to the Online Litigation Resolution Platform, created by the European Union and developed by the European Commission under the Regulation (EU) 524/2013.",
+    "p50": "Whenever the User is not a consumer or user, and when there is no rule that obliges otherwise, the parties agree to submit to the Courts and Tribunals of Pamplona, as this is the place where the contract is concluded, expressly waiving any another jurisdiction that could correspond to them."
+  }
+}

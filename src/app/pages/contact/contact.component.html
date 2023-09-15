@@ -1,0 +1,92 @@
+<div class="contact">
+  <div class="title">
+    <h2>{{'contact.text1' | translate}}</h2>
+    <h2>{{'contact.text2' | translate}}</h2>
+  </div>
+
+  <form class="form" [formGroup]="addressForm" (ngSubmit)="submitForm()">
+    <div class="form-1">
+      <div class="input">
+        <label>{{'contact.form.interest' | translate}}</label>
+        <div class="games">
+          <label class="game">
+            <input type="radio" name="game" formControlName="game" [value]="{name:'Maniac Panda', email: 'info@maniacpanda.com'}">
+            <img src="assets/images/logo_mini.svg" alt="Maniac panda logo" />
+          </label>
+          <label *ngFor="let game of games" class="game">
+            <input type="radio" name="game" formControlName="game" [value]="{name: game.name, email: game.email}">
+            <img src="assets/images/games/{{game.folder}}/logoContact.svg" alt="{{game.name}} logo" />
+          </label>
+        </div>
+        <div class="error square" *ngIf="addressForm.get('game').invalid && (addressForm.get('game').dirty || addressForm.get('game').touched)">
+          <span>Please select an option.</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-2">
+      <div class="input">
+        <label for="name">{{'contact.form.name' | translate}}</label><br>
+        <input type="text" id="name" name="name" value="" formControlName="name" />
+        <div class="error" *ngIf="addressForm.get('name').invalid && (addressForm.get('name').dirty || addressForm.get('name').touched)">
+          <span>Please provide a valid name.</span>
+        </div>
+      </div>
+      <div class="input">
+        <label for="email">{{'contact.form.email' | translate}}</label><br>
+        <input type="text" id="email" name="email" value="" formControlName="email" />
+        <div class="error" *ngIf="addressForm.get('email').invalid && (addressForm.get('email').dirty || addressForm.get('email').touched)">
+          <span>Please provide a valid email.</span>
+        </div>
+      </div>
+      <div class="input">
+        <label for="country">{{'contact.form.country' | translate}}</label><br>
+        <select class="country-selector" id="country" name="country" formControlName="country">
+          <option value="" disabled selected hidden>Select a country...</option>
+          <option *ngFor="let country of countries | keyvalue" value="{{country.key}}">{{country.value}}</option>
+        </select>
+        <div class="error" *ngIf="addressForm.get('country').invalid && (addressForm.get('country').dirty || addressForm.get('country').touched)">
+          <span>Please select a country.</span>
+        </div>
+      </div>
+      <div class="input">
+        <label for="phone">{{'contact.form.phone' | translate}}</label><br>
+        <input type="text" id="phone" name="phone" value="" formControlName="phone" />
+        <div class="error" *ngIf="addressForm.get('phone').invalid && (addressForm.get('phone').dirty || addressForm.get('phone').touched)">
+          <span>Please provide a valid phone.</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-3">
+      <div class="input">
+        <label for="message">{{'contact.form.message' | translate}}</label><br>
+        <textarea id="message" name="message" formControlName="message"></textarea>
+        <div class="error" *ngIf="addressForm.get('message').invalid && (addressForm.get('message').dirty || addressForm.get('message').touched)">
+          <span>Please provide a message.</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-4">
+      <div class="input">
+        <input type="checkbox" id="terms" name="terms" formControlName="terms" />
+        <label for="terms">{{'contact.form.terms' | translate}}</label>
+        <div class="error square" *ngIf="addressForm.get('terms').invalid && (addressForm.get('terms').dirty || addressForm.get('terms').touched)">
+          <span>Please accept the terms.</span>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" class="btn btn-purple" [class.disabled]="!addressForm.valid" [disabled]="!addressForm.valid" value="SEND" (mouseenter)="checkForm()" />
+      </div>
+    </div>
+  </form>
+
+  <div class="company">
+    <div class="text">
+      <h2>{{'contact.map.title' | translate}}</h2>
+      <p>{{'contact.map.text1' | translate}}</p>
+      <p>{{'contact.map.text2' | translate}}</p>
+    </div>
+
+    <img src="assets/images/locations/world_mobile.png" class="map-mobile" alt="Maniac panda workers located in map" />
+    <img src="assets/images/locations/world_desktop.png" class="map-desktop" alt="Maniac panda workers located in map" />
+  </div>
+</div>

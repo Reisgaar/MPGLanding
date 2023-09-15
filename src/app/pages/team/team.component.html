@@ -1,0 +1,35 @@
+<div class="team">
+
+  <h1 class="title">{{'team.title' | translate}}</h1>
+
+  <div class="pictures">
+    <div *ngFor="let c of cs" class="person">
+      <a href="{{c.linkedin}}" target="_blank">
+        <div class="image">
+          <img src="assets/images/social/linkedin.svg" alt="linkedin icon" class="linkedin" />
+          <img src="assets/images/team/{{c.position}}.png" alt="{{c.name + ' - ' + c.position}}" />
+          <p class="position">{{(c.position | uppercase).replace('_', ' ')}}</p>
+        </div>
+        <p class="name">{{c.name}}</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="list">
+    <div *ngFor="let int of internals; let i = index" class="department dep-{{i}}">
+      <h3>{{'team.departments.' + int.department | translate}}</h3>
+      <p *ngFor="let person of int.workers">{{person}}</p>
+    </div>
+  </div>
+
+  <div class="separator">
+    <img src="assets/images/scratch_small.svg" alt="decorative scratch">
+    <h2>{{'team.external' | translate}}</h2>
+  </div>
+  <div class="list">
+    <div *ngFor="let ext of externals" class="department">
+      <h3>{{ext.department}}</h3>
+      <p *ngFor="let person of ext.workers">{{person}}</p>
+    </div>
+  </div>
+</div>

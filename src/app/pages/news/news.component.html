@@ -1,0 +1,54 @@
+<div class="news">
+  <div class="limiter">
+    <h1>Keep up to date with the latest news!</h1>
+
+    <div class="new-wrapper">
+      <div class="new last"
+        (mousedown)="preventScroll($event)"
+        (click)="clickToDetail(lastNew.en.id)"
+        (auxclick)="wheelToDetail($event, lastNew.en.id)"
+      >
+        <p class="title" [innerHTML]="lastNew['language.lang' | translate].title"></p>
+        <div class="data">
+          <div class="image">
+            <p class="subtitle" [innerHTML]="lastNew['language.lang' | translate].subtitle"></p>
+            <img src="assets/images/news/{{lastNew.en.id}}/main.png" alt="Image of the new">
+          </div>
+          <p class="text" [innerHTML]="lastNew['language.lang' | translate].textResume"></p>
+        </div>
+        <p class="date">{{lastNew['language.lang' | translate].date}}</p>
+        <p class="read-time">Read time: {{calcReadTime(lastNew['language.lang' | translate].text)}} min</p>
+      </div>
+    </div>
+
+    <h2>Don't miss previous news!</h2>
+
+    <div class="new-wrapper">
+      <div class="new"
+        *ngFor="let orNew of allNews | slice:(currentPage*pageSize):((currentPage*pageSize) + pageSize);"
+        (mousedown)="preventScroll($event)"
+        (click)="clickToDetail(orNew.en.id)"
+        (auxclick)="wheelToDetail($event, orNew.en.id)"
+      >
+        <p class="title" [innerHTML]="orNew['language.lang' | translate].title"></p>
+        <div class="data">
+          <div class="image">
+            <p class="subtitle" [innerHTML]="orNew['language.lang' | translate].subtitle"></p>
+            <img src="assets/images/news/{{orNew.en.id}}/main.png" alt="Image of the new">
+          </div>
+          <p class="text" [innerHTML]="orNew['language.lang' | translate].textResume"></p>
+        </div>
+        <p class="date">{{orNew['language.lang' | translate].date}}</p>
+        <p class="read-time">Read time: {{calcReadTime(orNew['language.lang' | translate].text)}} min</p>
+      </div>
+    </div>
+
+    <div class="pagination" *ngIf="totalPages > 0">
+      <mat-icon *ngIf="currentPage === 0" class="arrow disabled">chevron_left</mat-icon>
+      <mat-icon *ngIf="currentPage > 0" (click)="changePage(false)" class="arrow">chevron_left</mat-icon>
+      <span>Page {{currentPage + 1}} of {{totalPages + 1}}</span>
+      <mat-icon *ngIf="currentPage < totalPages" (click)="changePage(true)" class="arrow">chevron_right</mat-icon>
+      <mat-icon *ngIf="currentPage >= totalPages" class="arrow disabled">chevron_right</mat-icon>
+    </div>
+  </div>
+</div>

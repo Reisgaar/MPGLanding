@@ -1,0 +1,33 @@
+<div class="footer">
+  <div class="grid">
+    <div class="logo" [routerLink]="'/home'">
+      <img src="assets/images/logo_negative.png" alt="Maniac Panda logo"/>
+    </div>
+
+    <div class="footer-block games">
+      <h2>{{'footer.stayConnected' | translate}}</h2>
+      <p *ngFor="let game of games">
+        <a href="{{game.website}}" target="_blank">{{game.name}}</a>
+      </p>
+    </div>
+
+    <div class="footer-block follow">
+      <h2>{{'footer.followUs' | translate}}</h2>
+      <a href="https://www.youtube.com/@maniacpanda" target="_blank">
+        <img src="assets/images/social/youtube.svg" class="icon" alt="Youtube logo" />
+      </a>
+      <h2>{{'footer.contact' | translate}}</h2>
+      <p>info@maniacpanda.com</p>
+    </div>
+
+    <div class="footer-block advice">
+      <h2>{{'footer.legal.title' | translate}}</h2>
+      <p [routerLink]="'/manifest'">{{'manifest.title' | translate}}</p>
+      <p [routerLink]="'/legal-notice'">{{'footer.legal.legalNotice' | translate}}</p>
+      <p [routerLink]="'/privacy-policy'">{{'footer.legal.privacyPolicy' | translate}}</p>
+      <p [routerLink]="'/cookies-policy'">{{'footer.legal.cookiesPolicy' | translate}}</p>
+    </div>
+  </div>
+
+  <div class="scratch"></div>
+</div>

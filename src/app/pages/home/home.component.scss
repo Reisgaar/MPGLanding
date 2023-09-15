@@ -1,0 +1,245 @@
+@import '/src/styleVariables.scss';
+
+.block {
+  position: sticky;
+  top: 0;
+  // overflow: hidden;
+
+  .next {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 0.3rem 1rem;
+    text-transform: uppercase;
+    width: max-content;
+    margin: 3rem auto 0;
+    background: $purple;
+
+    &:hover {
+      background-color: $purple-hover;
+    }
+  }
+}
+
+.head {
+  position: relative;
+  z-index: 0;
+  background-image: url('/assets/images/background_cascade_mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  .game-selector {
+    position: fixed;
+    z-index: 0;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 10rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+    filter: drop-shadow(1px 1px 1px black);
+
+    .title {
+      background-color: $red;
+      padding: 0.5rem;
+      font-family: $grazler;
+    }
+
+    &:hover .games {
+      display: block;
+    }
+
+    .games {
+      display: none;
+
+      .game {
+        cursor: pointer;
+        background-color: $red-opacity-low;
+        padding: 0.6rem;
+        font-family: $grazler;
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}
+
+.info {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+
+  .logo {
+    width: 50%;
+    min-width: 150px;
+    max-width: 250px;
+    margin: 0 0 6rem;
+    max-height: 40vh;
+    object-fit: contain;
+  }
+
+  .title {
+    color: $white;
+    font-family: $dekard;
+    font-size: 1.7rem;
+  }
+}
+
+.watch {
+  cursor: pointer;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 100px;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  width: max-content;
+  margin: 3rem auto 0;
+
+  &::before {
+    content: ">";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translate(-50%) scaleY(3);
+    color: $white;
+    font-family: 'dekard';
+    rotate: 90deg;
+  }
+
+  &:hover {
+    background-color: $white-hover;
+  }
+}
+
+/*
+ * Responsive breakpoints
+ */
+
+// Very small devices
+@media (min-width: 320px) {
+}
+
+// Small devices
+@media (min-width: 576px) {
+  .head {
+    background-image: url('/assets/images/background_cascade_desktop.png');
+
+    .info .title {
+      line-height: 1em;
+      margin: auto;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .info{
+
+    .logo {
+      max-width: 300px;
+    }
+
+    .title {
+      font-size: 4rem;
+    }
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .head {
+
+    .info .title {
+      font-size: 4rem;
+      max-width: 50rem;
+    }
+
+    .game-selector {
+      width: 12rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+}
+
+
+// RESPONSIVE ON SMALL HEIGHTS
+
+@media (max-height: 600px) {
+  .block .next {
+    font-size: 2.4vh;
+    bottom: 1.7vh;
+    padding: 0.8vh 2.5vh;
+    margin: 0 auto;
+  }
+
+  .head {
+
+    .game-selector {
+      padding: 2vh;
+      width: 50vw;
+      max-width: 10rem;
+
+      .title {
+        padding: 1.5vh;
+      }
+
+      .games {
+
+        .game {
+          padding: 1.5vh;
+        }
+      }
+    }
+
+    .info {
+
+      .logo {
+        width: unset;
+        height: 40vh;
+        min-width: unset;
+        margin: 0;
+      }
+
+      .title {
+        font-size: 5vh;
+        line-height: 1em;
+        margin-top: 5vh;
+      }
+    }
+  }
+
+  .watch {
+    font-size: 2.3vh;
+    padding: 1vh 3vh;
+    bottom: 5vh;
+
+    &::before {
+      top: calc(100% + 1vh);
+    }
+  }
+}

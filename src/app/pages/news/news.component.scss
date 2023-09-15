@@ -1,0 +1,251 @@
+@import '/src/styleVariables.scss';
+
+.news {
+  width: calc(100% - 2rem);
+  background-image: url('/assets/images/background_cascade_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 10rem 1rem;
+  color: $white;
+  overflow: auto;
+
+  h1 {
+    font-family: $grazler;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1em;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: $grazler;
+    font-size: 1.5rem;
+    margin: 5rem 0 0;
+  }
+
+  .pagination {
+    text-align: right;
+    color: white;
+    margin: 15px auto 5px;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .arrow {
+      cursor: pointer;
+      vertical-align: middle;
+      height: 35px;
+      width: 35px;
+      font-size: 35px;
+
+      &.disabled {
+        cursor: default;
+        color: #ffffff60;
+      }
+    }
+  }
+
+  .new-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin: 50px 0;
+
+    .new {
+      cursor: pointer;
+      position: relative;
+      margin: 0;
+      padding: 1rem 1rem 1.5rem;
+      background: #ffffff22;
+      border-radius: 0 20px 20px 0;
+      width: 300px;
+      display: grid;
+      grid-template-rows: 8em max-content;
+      transition: background 0.2s ease-in-out;
+      background: linear-gradient(75deg, #ffffff22 0%, #ffffff22 33%, #ffffff33 48%,#ffffff22 66%,#ffffff22 100%);
+      background-position: -200%;
+      background-size: 300%;
+      border-image: linear-gradient(to bottom, transparent, #ae5365 30%, #ae5365 70%, transparent) 1 100%;
+      border-width: 0 0 0 4px;
+      border-style: solid;
+      animation: new-appear 0.5s ease-in-out;
+
+      @keyframes new-appear {
+        from { transform: scale(0) rotate(-15deg); }
+        to   { transform: scale(1) rotate(0deg); }
+      }
+
+      &:hover {
+        background-position: -250%;
+
+        .data .image {
+
+          .subtitle {
+            transform: translate(-50%,-50%) scale(1.2) rotate(-5deg);
+          }
+
+          img{
+            border-radius: 0 20px;
+          }
+        }
+      }
+
+      &.last {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 20px;
+        border-width: 0px 4px;
+        grid-template-rows: auto;
+        border-image: linear-gradient(to bottom, transparent 5%, #ae5365 30%, #ae5365 70%, transparent 95%) 1 100%;
+        animation: new-last-appear 0.5s ease-in-out;
+
+        @keyframes new-last-appear {
+          0%   { transform: scale(0,0) }
+          100% { transform: scale(1,1) }
+        }
+
+        .title {
+          font-size: 1.5rem;
+          line-height: 1em;
+          padding: 0 2rem;
+        }
+
+        .data {
+          grid-template-rows: auto;
+
+          .image {
+            width: auto;
+            margin: auto;
+
+            img {
+              height: unset;
+              max-height: 200px;
+              max-width: 450px;
+            }
+          }
+
+          .text {
+            text-align: center;
+            margin: 1.5rem auto 0.5rem;
+          }
+        }
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        grid-row: 1;
+        text-align: center;
+        align-self: center;
+      }
+
+      .data {
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: max-content 1fr;
+
+        .image {
+          position: relative;
+          line-height: 0;
+          overflow: hidden;
+          grid-row: 1;
+
+          .subtitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(1) rotate(0deg);
+            width: 80%;
+            background: #000000aa;
+            padding: 10px 10%;
+            font-weight: 300;
+            margin: 0 0 5px;
+            text-align: center;
+
+            transition: transform 0.2s ease-in-out;
+          }
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 150px;
+            border-radius: 20px 0;
+            transition: border-radius 0.2s ease-in-out;
+          }
+        }
+
+        .text {
+          grid-row: 2;
+          font-weight: normal;
+          margin: 20px 0;
+        }
+      }
+
+      .date {
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+        font-size: 0.8rem;
+        text-align: right;
+        margin: 10px 0 0;
+      }
+
+      .read-time {
+        position: absolute;
+        bottom: 5px;
+        left: 15px;
+        font-size: 0.8rem;
+        text-align: right;
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+
+
+
+/*
+ * Responsive breakpoints
+ */
+
+// Very small devices
+@media (min-width: 320px) {
+}
+
+// Small devices
+@media (min-width: 576px) {
+  .news {
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .new-wrapper .new.last .title {
+      font-size: 2rem
+    }
+  }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .news {
+    background-image: url('/assets/images/background_cascade_desktop.png');
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+}
+

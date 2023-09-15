@@ -1,0 +1,18 @@
+<div class="block head">
+  <div class="game-selector">
+    <p class="title">{{'home.games' | translate}}</p>
+    <div class="games">
+      <p *ngFor="let game of games" class="game" (click)="changeActualBlock(game.folder)">{{game.name}}</p>
+    </div>
+  </div>
+  <div class="info">
+    <img src="assets/images/logo_negative.png" alt="Maniac Panda logo" class="logo" />
+    <h1 class="title">{{'home.claim' | translate}}</h1>
+  </div>
+  <p class="watch" (click)="changeActualBlock(games[0].folder)">{{'home.watchButton' | translate}}</p>
+</div>
+
+<div *ngFor="let game of games; let i = index" class="block" id="{{game.folder}}">
+  <app-game-block [game]="game" [align]="i % 2 === 0 ? 'left' : 'right'" ></app-game-block>
+  <p class="next" (click)="toNextBlock(game.folder)" *ngIf="i !== 0">{{'home.nextGame' | translate}}</p>
+</div>

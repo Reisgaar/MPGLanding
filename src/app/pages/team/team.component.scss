@@ -1,0 +1,222 @@
+@import '/src/styleVariables.scss';
+
+.team {
+  width: 100%;
+  background-image: url('/assets/images/background_cascade_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 10rem 0 1rem;
+  color: $white;
+  overflow: auto;
+
+  .title {
+    font-family: $grazler;
+    font-size: 2rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 5rem;
+  }
+
+  .pictures {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    .person {
+      align-self: center;
+      justify-self: center;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        width: max-content;
+        display: block;
+        margin: auto;
+
+        &:hover .image .linkedin {
+          display: block;
+          width: 2.5rem;
+          rotate: 0deg;
+          transition: width 0.2s ease-in-out, rotate 0.2s ease-in-out;
+        }
+      }
+
+      .image {
+        position: relative;
+        max-width: 200px;
+        margin: auto;
+
+        .linkedin {
+          position: absolute;
+          top: 0.3rem;
+          right: 0.3rem;
+          width: 0rem;
+          rotate: -180deg;
+          transition: width 0.2s ease-in-out, rotate 0.2s ease-in-out;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .position {
+          position: absolute;
+          bottom: 5%;
+          left: 3%;
+          margin: 0;
+          font-family: $grazler;
+          font-weight: bold;
+          font-size: 1.3rem;
+          width: min-content;
+          text-align: left;
+        }
+      }
+
+      .name {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .list {
+    width: 90%;
+    margin: 5rem auto;
+    max-width: 1440px;
+
+    .department {
+      padding: 1.5rem 0;
+      max-width: 30rem;
+      margin: auto;
+
+      h3 {
+        font-family: $grazler;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1em;
+      }
+
+      p {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  .separator {
+    width: min-content;
+    margin: 0 auto 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      letter-spacing: 0.4rem;
+    }
+  }
+}
+
+/*
+ * Responsive breakpoints
+ */
+
+// Very small devices
+@media (min-width: 320px) {
+}
+
+// Small devices
+@media (min-width: 576px) {
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .team {
+    background-image: url('/assets/images/background_cascade_desktop.png');
+
+    .title {
+      font-size: 3rem;
+      max-width: 1200px;
+    }
+
+    .pictures {
+      display: block;
+      text-align: center;
+
+      .person {
+        display: inline-block;
+        width: 33%;
+      }
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+
+      .department {
+        padding: 0;
+        margin: 0;
+        max-width: unset;
+
+        h3 {
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .dep-0 { grid-row: 1; grid-column: 1; }
+      .dep-1 { grid-row: 1; grid-column: 2; }
+
+      .dep-2 { grid-row: 2/4; grid-column: 1; }
+      .dep-3 { grid-row: 2; grid-column: 2; }
+      .dep-4 { grid-row: 3; grid-column: 2; }
+
+      .dep-5 { grid-row: 4/6; grid-column: 1; }
+      .dep-6 { grid-row: 4; grid-column: 2; }
+      .dep-7 { grid-row: 5; grid-column: 2; }
+
+      .dep-10 { grid-row: 6/9; grid-column: 1; }
+      .dep-8 { grid-row: 6; grid-column: 2; }
+      .dep-9 { grid-row: 7; grid-column: 2; }
+      .dep-11 { grid-row: 8; grid-column: 2; }
+
+      .dep-12 { grid-row: 9; grid-column: 1; }
+      .dep-13 { grid-row: 9; grid-column: 2; }
+
+      .dep-14 { grid-row: 10; grid-column: 1; }
+      .dep-15 { grid-row: 10/12; grid-column: 2; }
+      .dep-16 { grid-row: 11; grid-column: 1; }
+    }
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .team .list .department {
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+}
